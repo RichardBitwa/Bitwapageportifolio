@@ -65,12 +65,15 @@ img {
 .section-subtitle {
     font-size: 2rem;
     margin-bottom: 2rem;
+  
 }
 
 .section-description {
     font-size: 1.1rem;
     margin-bottom: 3rem;
     max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .highlight {
