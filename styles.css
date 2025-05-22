@@ -2,12 +2,16 @@
 :root {
     --primary-color: #FF0066;
     --secondary-color: #000000;
-    --accent-color: #00FF66;
+    --testcolor: #6054bd;
+    --accent-color: #f3f3f3;
     --text-color: #FFFFFF;
     --bg-color: #121212;
     --dark-gray: #1E1E1E;
     --light-gray: #333333;
+    --light-green: #00FF66; 
+    --light-blue: #00A6ED; 
     --transition: all 0.3s ease;
+   
 }
 
 * {
@@ -77,8 +81,10 @@ img {
 }
 
 .highlight {
-    color: var(--primary-color);
+    color: #6054bd;
     font-weight: 500;
+    font-size:18px;
+    font-weight: bold;
 }
 
 /* Header Styles */
@@ -157,7 +163,7 @@ img {
 }
 
 .lang-link:hover {
-    color: var(--accent-color);
+    color: var(--light-green);
 }
 
 .cta-link {
@@ -565,7 +571,7 @@ img {
 }
 
 .service-number {
-    color: var(--accent-color);
+    color: #6054bd;
     margin-right: 1rem;
 }
 
@@ -626,7 +632,7 @@ img {
 
 .disponivel-badge {
     display: inline-block;
-    background-color: var(--accent-color);
+    background-color: var(--light-green);
     color: var(--secondary-color);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
