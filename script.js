@@ -1,5 +1,7 @@
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Removida a animação do pattern hero, substituída por imagem estática
+    
     // Mobile menu toggle
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const mainNav = document.querySelector('.main-nav');

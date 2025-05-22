@@ -9,7 +9,6 @@
     --dark-gray: #1E1E1E;
     --light-gray: #333333;
     --light-green: #00FF66; 
-    --light-blue: #00A6ED; 
     --transition: all 0.3s ease;
    
 }
@@ -81,10 +80,10 @@ img {
 }
 
 .highlight {
-    color: #6054bd;
+    color: var(--testcolor);
     font-weight: 500;
     font-size:18px;
-    font-weight: bold;
+    
 }
 
 /* Header Styles */
@@ -163,7 +162,7 @@ img {
 }
 
 .lang-link:hover {
-    color: var(--light-green);
+    color: var(--testcolor);
 }
 
 .cta-link {
@@ -278,16 +277,23 @@ img {
     height: 20px;
 }
 
-.hero-pattern {
+.hero-face {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 100%;
-    background-image: linear-gradient(45deg, var(--primary-color) 25%, transparent 25%, transparent 50%, var(--primary-color) 50%, var(--primary-color) 75%, transparent 75%, transparent);
-    background-size: 20px 20px;
-    opacity: 0.05;
-    animation: pattern-move 30s linear infinite;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-face img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 102, 0.5));
 }
 
 @keyframes pattern-move {
@@ -295,7 +301,7 @@ img {
         background-position: 0 0;
     }
     100% {
-        background-position: 50px 50px;
+        background-position: 100px 100px;
     }
 }
 
@@ -571,7 +577,7 @@ img {
 }
 
 .service-number {
-    color: #6054bd;
+    color: var(--testcolor);
     margin-right: 1rem;
 }
 
@@ -759,8 +765,14 @@ img {
         justify-content: center;
     }
     
-    .hero-pattern {
-        display: none;
+    .hero-face {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
     }
     
     .section-title {
